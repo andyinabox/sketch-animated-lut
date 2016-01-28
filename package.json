@@ -1,0 +1,48 @@
+{
+  "name": "sketch-animated-lut",
+  "version": "0.0.1",
+  "description": "Playing around with animated color lookup tables in GLSL",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "budo index.js --live --open -H 127.0.0.1 --css styles.css -- -t glslify",
+    "build": "browserify index.js -t glslify | uglifyjs -m > dist/bundle.js; uglifycss styles.css > dist/styles.css",
+    "publish": "npm run build; gh-pages -d dist"
+  },
+  "author": {
+    "name": "Andy Dayton",
+    "email": "amdayton@gmail.com",
+    "url": "http://andydayton.com/"
+  },
+  "dependencies": {
+    "a-big-triangle": "~1.0.2",
+    "exdat": "^0.6.2",
+    "gh-pages": "^0.8.0",
+    "gl-fbo": "^2.0.5",
+    "gl-now": "~1.4.0",
+    "gl-shader": "~4.1.1",
+    "gl-texture2d": "^2.0.10",
+    "gl-texture2d-pip": "^1.0.0",
+    "glsl-fast-gaussian-blur": "^1.0.2",
+    "glsl-lut": "^1.1.0",
+    "lodash.clone": "^4.0.2",
+    "mouse-position": "^2.0.1",
+    "nowify": "^0.1.0",
+    "webcam-grabber": "^0.1.1"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "budo": "~7.1.0",
+    "glslify": "~5.0.0",
+    "uglify-js": "^2.6.1",
+    "uglifycss": "0.0.20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/andyinabox/sketch-animated-lut.git"
+  },
+  "homepage": "https://github.com/andyinabox/sketch-animated-lut",
+  "bugs": {
+    "url": "https://github.com/andyinabox/sketch-animated-lut/issues"
+  }
+}
