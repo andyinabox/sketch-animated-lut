@@ -28,9 +28,13 @@ var glsl = {
 		vert: glslify('./shaders/lut-default.vert')
 		, frag: glslify('./shaders/lut-default.frag')
 	}
-	, 'Tile1': {
+	, 'Tiles': {
 		vert: glslify('./shaders/lut-default.vert')
 		, frag: glslify('./shaders/lut-tile1.frag')
+	}
+	, 'Radial Stripes': {
+		vert: glslify('./shaders/lut-default.vert')
+		, frag: glslify('./shaders/lut-stripes1.frag')
 	}
 }
 var shaders = {};
