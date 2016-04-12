@@ -36,6 +36,14 @@ var glsl = {
 		vert: glslify('./shaders/lut-default.vert')
 		, frag: glslify('./shaders/lut-stripes1.frag')
 	}
+	, 'Stripes': {
+		vert: glslify('./shaders/lut-default.vert')
+		, frag: glslify('./shaders/lut-stripes2.frag')
+	}
+	, 'Stripes (90deg)': {
+		vert: glslify('./shaders/lut-default.vert')
+		, frag: glslify('./shaders/lut-stripes3.frag')
+	}
 }
 var shaders = {};
 var textures = {};

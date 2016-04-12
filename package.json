@@ -1,6 +1,6 @@
 {
   "name": "sketch-animated-lut",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Playing around with animated color lookup tables in GLSL",
   "main": "index.js",
   "license": "MIT",
